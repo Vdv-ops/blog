@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Blog with Auth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Full-Stack Blog with Auth</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username"><br><br>
+        <input type="password" id="password" placeholder="Password"><br><br>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="card">
+        <h2>Create Blog Post</h2>
+        <input type="text" id="title" placeholder="Blog Title"><br><br>
+        <textarea id="content" placeholder="Write your blog..." rows="5"></textarea><br><br>
+        <button onclick="publishPost()">Publish</button>
+    </div>
+
+    <div class="card">
+        <h2>Published Posts</h2>
+        <div id="posts"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
